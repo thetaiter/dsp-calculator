@@ -1,0 +1,58 @@
+- name: Plasma Refining
+  facility: Oil Refinery
+  time: 4
+  inputs:
+    - name: Oil
+      quantity: 2
+  outputs:
+    - name: Refined Oil
+      quantity: 2
+    - name: Hydrogen
+      quantity: 1
+- name: X-Ray Cracking
+  facility: Oil Refinery
+  time: 4
+  inputs:
+    - name: Refined Oil
+      quantity: 1
+    - name: Hydrogen
+      quantity: 2
+  outputs:
+    - name: Hydrogen
+      quantity: 3
+    - name: Energetic Graphite
+      quantity: 1
+- name: Plastic
+  facility: Chemical Plant
+  time: 3
+  inputs:
+    - name: Energetic Graphite
+      quantity: 1
+    - name: Refined Oil
+      quantity: 2
+  outputs:
+    - name: Plastic
+      quantity: 1
+- name: Organic Crystal
+  facility: Chemical Plant
+  time: 6
+  inputs:
+    - name: Plastic
+      quantity: 2
+    - name: Refined Oil
+      quantity: 1
+    - name: Water
+      quantity: 1
+  outputs:
+    - name: Organic Crystal
+      quantity: 1
+- name: Oil Extraction
+  facility: Oil Extractor
+  raw: true
+  outputs:
+    - name: Oil
+- name: Water Pumping
+  facility: Water Pump
+  raw: true
+  outputs:
+    - name: Water
