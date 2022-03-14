@@ -1,0 +1,62 @@
+- name: A
+  facility: Facility A
+  time: 1
+  inputs:
+    - name: One
+      quantity: 1
+  outputs:
+    - name: Two
+      quantity: 2
+- name: B
+  facility: Facility B
+  time: 2
+  inputs:
+    - name: Three
+      quantity: 1
+  outputs:
+    - name: Four
+      quantity: 1
+- name: C
+  facility: Facility C
+  time: 3
+  inputs:
+    - name: Two
+      quantity: 2
+    - name: Four
+      quantity: 1
+  outputs:
+    - name: Five
+      quantity: 1
+- name: D
+  facility: Facility D
+  time: 4
+  inputs:
+    - name: Six
+      quantity: 2
+    - name: Seven
+      quantity: 1
+  outputs:
+    - name: Five
+      quantity: 1
+    - name: Eight
+      quantity: 1
+- name: a
+  facility: Facility a
+  raw: true
+  outputs:
+    - name: One
+- name: b
+  facility: Facility b
+  raw: true
+  outputs:
+    - name: Three
+- name: c
+  facility: Facility c
+  raw: true
+  outputs:
+    - name: Six
+- name: d
+  facility: Facility d
+  raw: true
+  outputs:
+    - name: Seven
